@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+#right {
+  width: 60%;
+  height: 100%;
+  background-color: green;
+}
+#rtop {
+  display: flex;
+  width: 100%;
+  height: 45%;
+  background-color: yellow;
+}
+#rbottom {
+  width: 100%;
+  height: 55%;
+  background-image: url(https://media.istockphoto.com/id/1443287362/photo/woman-hiking-in-mountains-on-the-background-of-lysefjorden.jpg?s=1024x1024&w=is&k=20&c=SfJhXF81MvbZ2kAdc5tBYR9C7Xs4tmGY2GuRQr_FhDs=);
+  background-size: cover;
+  background-position: center;
+}
+#rTopLeft {
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+#rTopRight {
+  width: 45%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1458668383970-8ddd3927deed?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+#lnav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+}
+#lnavr a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+#lnavr {
+  display: flex;
+}
+#twitter {
+  color: rgb(69, 69, 189);
+}
+#left #textCentre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textCentre h1 {
+  font-size: 90px;
+  font-weight: 600;
+}
+#textCentre p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#textCentre a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+
+@media (max-width: 650px) {
+    #main{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+    }
+    #right{
+        width: 100%;
+    }
+}
+    

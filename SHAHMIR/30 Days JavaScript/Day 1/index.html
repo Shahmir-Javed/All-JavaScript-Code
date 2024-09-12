@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+   <h1>I love with Chai oue code</h1>
+<button>click</button>
+    <!-- <script src="program.js"></script> -->
+</body>
+<script>
+const changeText = () => {
+    document.querySelector('h1').innerHTML = "I love with javascript and Chai oue code";
+}
+const changeMe = setTimeout(changeText, 2000);
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', () => {
+clearTimeout(changeMe)
+console.log('clicked');
+})
+</script>
+</html>
